@@ -11,8 +11,10 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 
+console.log("main.jsx working");
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Home/>
   </React.StrictMode>,
 )
+console.log("main.jsx working");
