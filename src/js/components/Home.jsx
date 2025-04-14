@@ -4,12 +4,13 @@ import React from "react";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
 import Card from "./Card";
+import Footer from "./Footer";
 
 //create your first component
 
 const cardData = [
 	{
-		cardTitle: "Título de la tarjeta",
+		cardTitle: "Título tarjeta",
 		imageSource: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
 		cardDescription: "Esta es la descripción de mi tarjeta",
 	},
@@ -33,14 +34,14 @@ const cardData = [
 
 const Home = () => {
 	return (
-		<div>
+		<div className="all-encompassing">
 			<Navbar />
 			<div className="container">
 				<Jumbotron />
 			</div>
-			<div className="d-flex">
+			<div className="d-flex row row-cols-1 row-cols-md-4 g-4">
 				{cardData.map((card, index) => (
-					<div key={index} className="col-3 d-flex">
+					<div key={index} className="col">
 						<Card
 							cardTitle={card.cardTitle}
 							imageSource={card.imageSource}
@@ -48,6 +49,7 @@ const Home = () => {
 					</div>
 				))}
 			</div>
+			<Footer/>
 		</div>
 	);
 };

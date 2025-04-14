@@ -9,3 +9,22 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.footer{
+    background-color: black;
+    color:white;
+    width:100%;
+}
+.all-encompassing{
+    height:100%;
+    width:100%;
+}
+.card-img-top{
+    height:200px;
+    object-fit: contain;
+    width:100%
+}
+.uniform-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
